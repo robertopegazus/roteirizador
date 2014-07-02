@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+	<h:form>
+		<h:panelGrid width="100%" columns="1" border="0">
+
+			<h:outputLabel value="Nome :" />
+			<h:inputText value="#{pessoaMB.pessoa.nome}" size="58" maxlength="100" />			
+			<br />
+			
+			<h:outputLabel value="Sobrenome :" />
+			<h:inputText value="#{pessoaMB.pessoa.sobrenome}" size="90" maxlength="100" />			
+			<br />
+						
+		</h:panelGrid>
+
+		<h:commandButton action="#{pessoaMB.cadastrar}" value="Cadastrar" id="btCadastrar" />
+	</h:form>
+</h:body>
+
+</html>
